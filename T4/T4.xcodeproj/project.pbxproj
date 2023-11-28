@@ -15,6 +15,7 @@
 		147F908F2B15EAA10057BC2D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F908E2B15EAA10057BC2D /* SwiftUIView.swift */; };
 		147F90912B15EABD0057BC2D /* TestOrSkipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F90902B15EABD0057BC2D /* TestOrSkipView.swift */; };
 		147F90932B15EAD50057BC2D /* SkinTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F90922B15EAD50057BC2D /* SkinTestView.swift */; };
+		A63E031F2B15ECAE00AAF4F0 /* logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E031E2B15ECAE00AAF4F0 /* logo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		147F908E2B15EAA10057BC2D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		147F90902B15EABD0057BC2D /* TestOrSkipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOrSkipView.swift; sourceTree = "<group>"; };
 		147F90922B15EAD50057BC2D /* SkinTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinTestView.swift; sourceTree = "<group>"; };
+		A63E031E2B15ECAE00AAF4F0 /* logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				147F908E2B15EAA10057BC2D /* SwiftUIView.swift */,
 				147F90902B15EABD0057BC2D /* TestOrSkipView.swift */,
 				147F90922B15EAD50057BC2D /* SkinTestView.swift */,
+				A63E031E2B15ECAE00AAF4F0 /* logo.swift */,
 				147F90822B15EA170057BC2D /* Assets.xcassets */,
 				147F90872B15EA170057BC2D /* T4.entitlements */,
 				147F90882B15EA170057BC2D /* Info.plist */,
@@ -157,6 +160,7 @@
 				147F90812B15EA160057BC2D /* Item.swift in Sources */,
 				147F90912B15EABD0057BC2D /* TestOrSkipView.swift in Sources */,
 				147F90932B15EAD50057BC2D /* SkinTestView.swift in Sources */,
+				A63E031F2B15ECAE00AAF4F0 /* logo.swift in Sources */,
 				147F908F2B15EAA10057BC2D /* SwiftUIView.swift in Sources */,
 				147F907D2B15EA160057BC2D /* T4App.swift in Sources */,
 			);

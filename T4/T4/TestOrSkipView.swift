@@ -21,7 +21,7 @@ import SwiftUI
                   }
                 
                 Text("يساعدك نقاء على إيجاد الحلول المناسبة لمشاكل بشرتك، و يساعدك على الالتزام بروتين عنايتك اليومية بشكل مستمر")
-                    .font(.custom("Roboto", size: 21))
+                    .font(.custom("Tajwal", size: 21))
                      .foregroundColor(Color.font)
                      .multilineTextAlignment(.center)
        
@@ -29,19 +29,19 @@ import SwiftUI
                 
                            }) {
                                Text("اختبر نوع بشرتك")
-                                   .font(.custom("Roboto", size: 23))
+                                   .font(.custom("Tajwal", size: 23))
                                    .fontWeight(.regular)
                                    .frame(width: 300.0, height: 55.0)
-                                   .background(Color.bott)
-                                   .foregroundColor(.font)
-                                   .cornerRadius(30)
+                                   .background(Color.g1)
+                                   .foregroundColor(.white)
+                                   .cornerRadius(15)
                                    .shadow(radius: 1)
                            }
                     Button(action: {
  
                            }) {
                                Text("تخطي")
-                                   .font(.custom("Roboto", size: 21))
+                                   .font(.custom("Tajwal", size: 21))
                                     .foregroundColor(Color.font)
                                     .multilineTextAlignment(.center)
 //                                    .shadow(radius: 5)
@@ -62,4 +62,5 @@ import SwiftUI
             TestOrSkipView()
         }
     }
+
 

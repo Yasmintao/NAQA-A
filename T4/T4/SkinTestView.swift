@@ -1,3 +1,4 @@
+
 //
 //  SkinTestView.swift
 //  Team4
@@ -16,7 +17,7 @@ struct SkinTestView: View {
                  
                     VStack {
                         Text("قم بغسل بشرتك بمنظف مناسب وانتظر ما بين ١٥ - ٣٠ دقيقة ، ثم اخترالشكل الأقرب لملمس بشرتك")
-                                .font(.custom("Roboto", size: 19))
+                                .font(.custom("Tajwal", size: 19))
                                 .foregroundColor(Color.font)
                             .multilineTextAlignment(.center)
                     }
@@ -41,17 +42,17 @@ struct SkinTestView: View {
                                             }
                         HStack(spacing:70){
                             Text("زيت")
-                                .font(.custom("Roboto", size: 21))
+                                .font(.custom("Tajwal", size: 21))
                                 .foregroundColor(Color.font)
                                 .multilineTextAlignment(.center)
                          
                             Text("طبيعي")
-                                .font(.custom("Roboto", size: 21))
+                                .font(.custom("Tajwal", size: 21))
                                 .foregroundColor(Color.font)
                                 .multilineTextAlignment(.center)
                           
                             Text("جفاف")
-                                .font(.custom("Roboto", size: 21))
+                                .font(.custom("Tajwal", size: 21))
                                 .foregroundColor(Color.font)
                                 .multilineTextAlignment(.center)
                         }
@@ -66,7 +67,7 @@ struct SkinTestView: View {
                                     .foregroundColor(Color(red: 0.93, green: 0.905, blue: 0.884))
                                     .frame(width: 200.0, height: 200.0)
                                 Text("بشرة جافة")
-                                    .font(.custom("Roboto", size: 21))
+                                    .font(.custom("Tajwal", size: 21))
                                     .foregroundColor(Color.font)
                                     .multilineTextAlignment(.center)
                             }
@@ -81,7 +82,7 @@ struct SkinTestView: View {
                                     .frame(width: 200.0, height: 200.0)
                                 
                             Text("بشرة عادية")
-                                .font(.custom("Roboto", size: 21))
+                                .font(.custom("Tajwal", size: 21))
                                 .foregroundColor(Color.font)
                                 .multilineTextAlignment(.center)
                             }
@@ -97,7 +98,7 @@ struct SkinTestView: View {
                                 .frame(width: 200.0, height: 200.0)
                         
                         Text("بشرة مختلطة")
-                            .font(.custom("Roboto", size: 21))
+                            .font(.custom("Tajwal", size: 21))
                             .foregroundColor(Color.font)
                             .multilineTextAlignment(.center)
                         }
@@ -113,7 +114,7 @@ struct SkinTestView: View {
                                     .frame(width: 200.0, height: 200.0)
         
                                 Text("بشرة دهنية")
-                                    .font(.custom("Roboto", size: 21))
+                                    .font(.custom("Tajwal", size: 21))
                                     .foregroundColor(Color.font)
                                     .multilineTextAlignment(.center)
                             }
