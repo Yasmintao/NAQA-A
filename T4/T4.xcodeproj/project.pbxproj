@@ -16,6 +16,10 @@
 		147F90912B15EABD0057BC2D /* TestOrSkipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F90902B15EABD0057BC2D /* TestOrSkipView.swift */; };
 		147F90932B15EAD50057BC2D /* SkinTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F90922B15EAD50057BC2D /* SkinTestView.swift */; };
 		A63E031F2B15ECAE00AAF4F0 /* logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E031E2B15ECAE00AAF4F0 /* logo.swift */; };
+		CCA6DA692B15EDB8009D66BE /* Skin1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6DA682B15EDB8009D66BE /* Skin1.swift */; };
+		CCA6DA6B2B15EDBF009D66BE /* Skin2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6DA6A2B15EDBF009D66BE /* Skin2.swift */; };
+		CCA6DA6D2B15EDC5009D66BE /* Skin3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6DA6C2B15EDC5009D66BE /* Skin3.swift */; };
+		CCA6DA712B15EDE0009D66BE /* Skin4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6DA702B15EDE0009D66BE /* Skin4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		147F90902B15EABD0057BC2D /* TestOrSkipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOrSkipView.swift; sourceTree = "<group>"; };
 		147F90922B15EAD50057BC2D /* SkinTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinTestView.swift; sourceTree = "<group>"; };
 		A63E031E2B15ECAE00AAF4F0 /* logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logo.swift; sourceTree = "<group>"; };
+		CCA6DA682B15EDB8009D66BE /* Skin1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin1.swift; sourceTree = "<group>"; };
+		CCA6DA6A2B15EDBF009D66BE /* Skin2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin2.swift; sourceTree = "<group>"; };
+		CCA6DA6C2B15EDC5009D66BE /* Skin3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin3.swift; sourceTree = "<group>"; };
+		CCA6DA702B15EDE0009D66BE /* Skin4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,10 @@
 			children = (
 				147F907C2B15EA160057BC2D /* T4App.swift */,
 				147F907E2B15EA160057BC2D /* ContentView.swift */,
+				CCA6DA682B15EDB8009D66BE /* Skin1.swift */,
+				CCA6DA6A2B15EDBF009D66BE /* Skin2.swift */,
+				CCA6DA6C2B15EDC5009D66BE /* Skin3.swift */,
+				CCA6DA702B15EDE0009D66BE /* Skin4.swift */,
 				147F90802B15EA160057BC2D /* Item.swift */,
 				147F908E2B15EAA10057BC2D /* SwiftUIView.swift */,
 				147F90902B15EABD0057BC2D /* TestOrSkipView.swift */,
@@ -159,7 +171,11 @@
 				147F907F2B15EA160057BC2D /* ContentView.swift in Sources */,
 				147F90812B15EA160057BC2D /* Item.swift in Sources */,
 				147F90912B15EABD0057BC2D /* TestOrSkipView.swift in Sources */,
+				CCA6DA712B15EDE0009D66BE /* Skin4.swift in Sources */,
 				147F90932B15EAD50057BC2D /* SkinTestView.swift in Sources */,
+				CCA6DA6B2B15EDBF009D66BE /* Skin2.swift in Sources */,
+				CCA6DA692B15EDB8009D66BE /* Skin1.swift in Sources */,
+				CCA6DA6D2B15EDC5009D66BE /* Skin3.swift in Sources */,
 				A63E031F2B15ECAE00AAF4F0 /* logo.swift in Sources */,
 				147F908F2B15EAA10057BC2D /* SwiftUIView.swift in Sources */,
 				147F907D2B15EA160057BC2D /* T4App.swift in Sources */,
