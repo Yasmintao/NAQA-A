@@ -667,7 +667,8 @@ struct ContentView1: View {
                                                                 
                                                                     .overlay(
                                                                         Text("اسم المنتج")
-                                                                            .font(Font.custom("Tajawal", size: 18))                                                                            .fontWeight(.heavy)
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
                                                                             .foregroundColor(.white))
 
                                                                 
@@ -879,6 +880,7 @@ struct ContentView1: View {
                                                                     .overlay(
                                                                         Text("اسم المنتج")
                                                                             .font(Font.custom("Tajawal", size: 18))
+                                                                      
                                                                             .fontWeight(.heavy)
                                                                             .foregroundColor(.white))
 
@@ -897,6 +899,172 @@ struct ContentView1: View {
                                                 
                                             }
                                         }}
+                                    HStack {
+                                        Text("واقي شمس")
+                                            .font(Font.custom("Tajawal", size: 24))
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.g1)
+                                           
+                                         
+                                    }.padding(.trailing,270)
+                                   HStack {
+                                        ScrollView(.horizontal, showsIndicators: false) {
+                                            HStack(spacing: 15) {
+                                                
+                                                
+                                                
+                                                // ZStack {
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)
+                                                            //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                
+                                                                //.cornerRadius(12)
+                                                                
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,110)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                // .navigationBarBackButtonHidden(true)
+                                                // }
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)
+                                                            //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,110)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)     //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                      
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,120)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                
+                                            }
+                                        }}
+                                    
                                     
                                     
                                 }
@@ -1399,6 +1567,172 @@ struct ContentView1: View {
                                                 
                                             }
                                         }}
+                                    HStack {
+                                        Text("واقي شمس")
+                                            .font(Font.custom("Tajawal", size: 24))
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.g1)
+                                           
+                                         
+                                    }.padding(.trailing,270)
+                                   HStack {
+                                        ScrollView(.horizontal, showsIndicators: false) {
+                                            HStack(spacing: 15) {
+                                                
+                                                
+                                                
+                                                // ZStack {
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)
+                                                            //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                
+                                                                //.cornerRadius(12)
+                                                                
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,110)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                // .navigationBarBackButtonHidden(true)
+                                                // }
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)
+                                                            //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,110)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)     //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                      
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,120)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                
+                                            }
+                                        }}
+                                    
                                     
                                     
                                 }
@@ -1882,6 +2216,7 @@ struct ContentView1: View {
                                                                     .overlay(
                                                                         Text("اسم المنتج")
                                                                             .font(Font.custom("Tajawal", size: 18))
+                                                                      
                                                                             .fontWeight(.heavy)
                                                                             .foregroundColor(.white))
 
@@ -1900,6 +2235,172 @@ struct ContentView1: View {
                                                 
                                             }
                                         }}
+                                    HStack {
+                                        Text("واقي شمس")
+                                            .font(Font.custom("Tajawal", size: 24))
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.g1)
+                                           
+                                         
+                                    }.padding(.trailing,270)
+                                   HStack {
+                                        ScrollView(.horizontal, showsIndicators: false) {
+                                            HStack(spacing: 15) {
+                                                
+                                                
+                                                
+                                                // ZStack {
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)
+                                                            //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                
+                                                                //.cornerRadius(12)
+                                                                
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,110)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                // .navigationBarBackButtonHidden(true)
+                                                // }
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)
+                                                            //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,110)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)     //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                      
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,120)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                
+                                            }
+                                        }}
+                                    
                                     
                                     
                                 }
@@ -2120,7 +2621,8 @@ struct ContentView1: View {
                                                                 
                                                                     .overlay(
                                                                         Text("اسم المنتج")
-                                                                            .font(Font.custom("Tajawal", size: 18))                                                                            .fontWeight(.heavy)
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
                                                                             .foregroundColor(.white))
 
                                                                 
@@ -2382,6 +2884,7 @@ struct ContentView1: View {
                                                                     .overlay(
                                                                         Text("اسم المنتج")
                                                                             .font(Font.custom("Tajawal", size: 18))
+                                                                      
                                                                             .fontWeight(.heavy)
                                                                             .foregroundColor(.white))
 
@@ -2400,6 +2903,172 @@ struct ContentView1: View {
                                                 
                                             }
                                         }}
+                                    HStack {
+                                        Text("واقي شمس")
+                                            .font(Font.custom("Tajawal", size: 24))
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.g1)
+                                           
+                                         
+                                    }.padding(.trailing,270)
+                                   HStack {
+                                        ScrollView(.horizontal, showsIndicators: false) {
+                                            HStack(spacing: 15) {
+                                                
+                                                
+                                                
+                                                // ZStack {
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)
+                                                            //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                
+                                                                //.cornerRadius(12)
+                                                                
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,110)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                // .navigationBarBackButtonHidden(true)
+                                                // }
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)
+                                                            //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,110)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                
+                                                NavigationLink(
+                                                    
+                                                    destination: SwiftUIView(),
+                                                    label: {
+                                                        ZStack {
+                                                            RoundedRectangle(cornerRadius: 12)
+                                                                .stroke(Color(red:0.26,green:0.37, blue:0.16), lineWidth:0.5)
+                                                            
+                                                                .fill(.we)                     .border(Color.we, width: 0)
+                                                                .shadow(radius: 2.5)
+                                                                .frame(width: 140, height: 150)     //ZStack {
+                                                            
+                                                            
+                                                            //    .overlay(
+                                                            Image("")
+                                                                .resizable()
+                                                                .frame(width: 100.0, height: 100.0)
+                                                            
+                                                            //  )
+                                                            
+                                                            //   .frame(width: 270)
+                                                            VStack {
+                                                                RoundedRectangle(cornerRadius: 12)
+                                                                    .frame(width: 140, height: 40, alignment: .center)
+                                                                    .foregroundColor(.g1)
+                                                                
+                                                                    .cornerRadius(12)
+                                                                    .overlay(
+                                                                        Text("اسم المنتج")
+                                                                            .font(Font.custom("Tajawal", size: 18))
+                                                                      
+                                                                            .fontWeight(.heavy)
+                                                                            .foregroundColor(.white))
+
+                                                                
+                                                            }.padding(.top,120)
+                                                            //.position(CGPoint(x: 135.0, y: 115))
+                                                            //  )
+                                                            
+                                                            //  }
+                                                        }
+                                                        
+                                                        
+                                                    }// label
+                                                    
+                                                )
+                                                
+                                            }
+                                        }}
+                                    
                                     
                                     
                                 }
