@@ -119,11 +119,14 @@ struct ContentView1: View {
                                                 if showSun {
                                                     ZStack(alignment: .leading) {
                                                         Rectangle()
-                                                            .foregroundColor(stepIndex < currentStep ? Color(red: 1, green: 0.78, blue: 0) : Color(red: 0.94, green: 0.94, blue: 0.94)) // Change the line color here
+                                                            .foregroundColor(stepIndex < currentStep ? Color(red: 0.66, green: 0.69, blue: 0.74) : Color(red: 0.94, green: 0.94, blue: 0.94))
                                                             .frame(width: 50, height: 5) // Adjust the width and height to fit your design
                                                         
                                                         Circle()
-                                                            .foregroundColor(stepIndex < currentStep ? Color(red: 1, green: 0.78, blue: 0) : Color(red: 0.94, green: 0.94, blue: 0.94)) // Change the circle color here
+                                                            .foregroundColor(stepIndex < currentStep ?  Color(red: 0.66, green: 0.69, blue: 0.74) : Color(red: 0.94, green: 0.94, blue: 0.94)
+                                                                             
+                                                                             
+                                                                             /*Color(red: 1, green: 0.78, blue: 0) : Color(red: 0.94, green: 0.94, blue: 0.94)*/) // Change the circle color here
                                                             .frame(width: 30, height: 20)
                                                     }
                                                     .onTapGesture {
@@ -132,11 +135,11 @@ struct ContentView1: View {
                                                 } else {
                                                     ZStack(alignment: .leading) {
                                                         Rectangle()
-                                                            .foregroundColor(stepIndex < currentStep1 ? Color(red: 0.66, green: 0.69, blue: 0.74) : Color(red: 0.94, green: 0.94, blue: 0.94)) // Change the line color here
+                                                            .foregroundColor(stepIndex < currentStep1 ?Color(red: 1, green: 0.78, blue: 0) : Color(red: 0.94, green: 0.94, blue: 0.94) /*Color(red: 0.66, green: 0.69, blue: 0.74) : Color(red: 0.94, green: 0.94, blue: 0.94)*/) // Change the line color here
                                                             .frame(width: 50, height: 5) // Adjust the width and height to fit your design
                                                         
                                                         Circle()
-                                                            .foregroundColor(stepIndex < currentStep1 ? Color(red: 0.66, green: 0.69, blue: 0.74) : Color(red: 0.94, green: 0.94, blue: 0.94)) // Change the circle color here
+                                                            .foregroundColor(stepIndex < currentStep1 ? Color(red: 1, green: 0.78, blue: 0) : Color(red: 0.94, green: 0.94, blue: 0.94) /*Color(red: 0.66, green: 0.69, blue: 0.74) : Color(red: 0.94, green: 0.94, blue: 0.94)*/) // Change the circle color here
                                                             .frame(width: 30, height: 20)
                                                     }
                                                     .onTapGesture {

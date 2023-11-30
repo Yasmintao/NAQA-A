@@ -9,7 +9,7 @@ struct logo: View {
             
         {
             
-            TestOrSkipView()
+            Onboarding1()
             
         }
         else{
