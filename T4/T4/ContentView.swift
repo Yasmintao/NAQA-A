@@ -18,6 +18,8 @@ struct ContentView1: View {
     @State private var isButton4Clicked = false
     @State private var isButton5Clicked = false
     @State private var selectedButton = 1
+    @State private var rectangleColor = Color(red: 1, green: 0.91, blue: 0.6)
+    @State private var showSun = false
     
     var body: some View {
         NavigationView {
@@ -26,7 +28,7 @@ struct ContentView1: View {
                     
                     //هنا التعديلات
                     VStack{
-                        GeometryReader { geometry in
+                       // GeometryReader { geometry in
                             
                             
                             
@@ -45,92 +47,108 @@ struct ContentView1: View {
                                     
                                 }
                                 .padding(.trailing, 250.0)   //hstack
-                                
-                                
                                 Rectangle()
-                                    .foregroundColor(.clear)
-                                    .frame(width: 357, height: 0.5)
-                                    .background(Color(red: 0.26, green: 0.37, blue: 0.16))
-                                
-                                ZStack {
-                                    HStack {
-                                        Image("sun")
-                                            .resizable()
-                                            .frame(width: 380, height: 200)
+                                                                    .foregroundColor(.clear)
+                                                                    .frame(width: 357, height: 0.5)
+                                                                    .background(Color(red: 0.26, green: 0.37, blue: 0.16))
+                               ZStack {
+                                  
+                                    Rectangle()
+                                        .fill(rectangleColor)
+                                        .frame(width: 350, height: 180)
+                                        .cornerRadius(10)
+                                    HStack{
+                                        if showSun {
+                                            Image("sun")
+                                                .font(.system(size: 30))
+                                                .onTapGesture {
+                                                    rectangleColor = Color(red: 1, green: 0.91, blue: 0.6)
+                                                    showSun = false
+                                                }
+                                                .transition(.opacity)
+                                        } else {
+                                            Image("moon")
+                                                .font(.system(size: 30))
+                                                .onTapGesture {
+                                                    rectangleColor = Color(red: 0.25, green: 0.25, blue: 0.26)
+                                                    showSun = true
+                                                }
+                                                .transition(.opacity)
+                                        }
                                     }
-                                    .padding(.leading, 6.0) //hstack
+                                    .padding(.leading, 280)
+                                    .padding(.bottom, 110)
                                     
-                                    VStack(spacing: 15){
-                                        
-                                        HStack(spacing: 50){
-                                            Text("اليوم الاول")
+                                   VStack (spacing: 20){
+                                        HStack(spacing: 20){
+                                            Text("الاحد")
                                                 .font(Font.custom("Tajawal", size: 12))
                                                 .foregroundColor(.black)
                                             
                                             
                                             
-                                            Text("اليوم الثالث ")
+                                            Text("الاثنين")
                                                 .font(Font.custom("Tajawal", size: 12))
                                                 .foregroundColor(.black)
                                             
                                             
-                                            Text(" اليوم الخامس ")
+                                            Text("الثلاثاء")
                                                 .font(Font.custom("Tajawal", size: 12))
                                                 .foregroundColor(.black)
                                             
                                             
                                             
-                                            Text("اليوم السابع ")
+                                            Text("الاربعاء")
                                                 .font(Font.custom("Tajawal", size: 12))
                                                 .foregroundColor(.black)
-                                        }//.padding(.leading, 7.0)
-                                        //
+                                            
+                                            Text("الخميس")
+                                                .font(Font.custom("Tajawal", size: 12))
+                                                .foregroundColor(.black)
+                                            
+                                            Text("الجمعة")
+                                                .font(Font.custom("Tajawal", size: 12))
+                                                .foregroundColor(.black)
+                                            
+                                            Text("السبت")
+                                                .font(Font.custom("Tajawal", size: 12))
+                                                .foregroundColor(.black)
+                                        }
                                         HStack(spacing: 0) {
                                             ForEach(0..<7) { stepIndex in
-                                                ZStack (alignment: .leading){
-                                                    //HStack {
-                                                    
-                                                    HStack(spacing: 0){
-                                                        if stepIndex != 6 {
-                                                            Rectangle()
-                                                                .foregroundColor(stepIndex < currentStep ? Color(hex: "425E2A") : .gray) // Change the line color here
-                                                                .frame(width: 55, height: 5) // Adjust the width and height to fit your design
-                                                        }
+                                                if showSun {
+                                                    ZStack(alignment: .leading) {
+                                                        Rectangle()
+                                                            .foregroundColor(stepIndex < currentStep ? Color(red: 1, green: 0.78, blue: 0) : Color(red: 0.94, green: 0.94, blue: 0.94)) // Change the line color here
+                                                            .frame(width: 50, height: 5) // Adjust the width and height to fit your design
                                                         
-                                                    }//.padding(.leading,1)
-                                                    
-                                                    HStack(spacing: 0){
                                                         Circle()
-                                                            .foregroundColor(stepIndex < currentStep ? Color(hex: "425E2A") : Color(hex: "f5efe7")) // Change the circle color here
-                                                            .frame(width: 25, height: 20)
-                                                    }//.padding(.trailing,25)
-                                                    //}
-                                                    
-                                                }   .onTapGesture {
-                                                    currentStep = stepIndex
+                                                            .foregroundColor(stepIndex < currentStep ? Color(red: 1, green: 0.78, blue: 0) : Color(red: 0.94, green: 0.94, blue: 0.94)) // Change the circle color here
+                                                            .frame(width: 30, height: 20)
+                                                    }
+                                                    .onTapGesture {
+                                                        currentStep = stepIndex
+                                                    }
+                                                } else {
+                                                    ZStack(alignment: .leading) {
+                                                        Rectangle()
+                                                            .foregroundColor(stepIndex < currentStep1 ? Color(red: 0.66, green: 0.69, blue: 0.74) : Color(red: 0.94, green: 0.94, blue: 0.94)) // Change the line color here
+                                                            .frame(width: 50, height: 5) // Adjust the width and height to fit your design
+                                                        
+                                                        Circle()
+                                                            .foregroundColor(stepIndex < currentStep1 ? Color(red: 0.66, green: 0.69, blue: 0.74) : Color(red: 0.94, green: 0.94, blue: 0.94)) // Change the circle color here
+                                                            .frame(width: 30, height: 20)
+                                                    }
+                                                    .onTapGesture {
+                                                        currentStep1 = stepIndex
+                                                    }
                                                 }
                                             }
-                                        }//.padding()
-                                        //zstack
-                                        HStack(spacing: 50){
-                                            
-                                            
-                                            Text("اليوم الثاني ")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
-                                            
-                                            
-                                            Text(" اليوم الرابع ")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
-                                            
-                                            
-                                            Text(" اليوم السادس ")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
-                                            
-                                            
                                         }
+                                        //.padding(.bottom, 20)
+                                    
+                                    
+                                    if showSun {
                                         Button(action: {
                                             if currentStep < totalSteps {
                                                 currentStep += 1
@@ -138,147 +156,43 @@ struct ContentView1: View {
                                                 currentStep = 0 // Reset the current step to 0
                                             }
                                         }) {
-                                            
                                             Text("انتهيت")
                                                 .font(Font.custom("Tajawal", size: 12))
                                                 .multilineTextAlignment(.center)
                                                 .foregroundColor(.black)
-                                            
-                                            
                                                 .foregroundColor(.clear)
                                                 .frame(width: 59, height: 20)
                                                 .background(.white)
-                                            
                                                 .cornerRadius(10)
                                         }
-                                    }.padding(.top,40 )
-                                }
-                                
-                                
-                                ZStack {
-                                    HStack {
-                                        Image("moon")
-                                            .resizable()
-                                            .frame(width: 380, height: 200)
+                                        .transition(.opacity)
                                     }
-                                    //  .padding(.leading, -22.0) //hstack
-                                    
-                                    VStack(spacing: 15){
-                                        
-                                        HStack(spacing: 50){
-                                            Text("اليوم الاول")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                            
-                                            Text("اليوم الثالث ")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                            
-                                            Text(" اليوم الخامس ")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                            Text("اليوم السابع ")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                        }
-                                        
-                                        
-                                        //(alignment: .leading)
-                                        HStack(spacing: 0) {
-                                            ForEach(0..<7) { stepIndex in
-                                                ZStack (alignment: .leading){
-                                                    //HStack {
-                                                    
-                                                    HStack(spacing: 0){
-                                                        if stepIndex != 6 {
-                                                            Rectangle()
-                                                                .foregroundColor(stepIndex < currentStep1 ? Color(hex: "425E2A") : .gray) // Change the line color here
-                                                                .frame(width: 55, height: 5) // Adjust the width and height to fit your design
-                                                        }
-                                                        
-                                                    }//.padding(.leading,1)
-                                                    
-                                                    HStack(spacing: 0){
-                                                        Circle()
-                                                            .foregroundColor(stepIndex < currentStep1 ? Color(hex: "425E2A") : Color(hex: "f5efe7")) // Change the circle color here
-                                                            .frame(width: 25, height: 20)
-                                                    }//.padding(.trailing,25)
-                                                    //}
-                                                    
-                                                }   .onTapGesture {
-                                                    currentStep1 = stepIndex
+                                        else{
+                                            Button(action: {
+                                                if currentStep1 < totalSteps1 {
+                                                    currentStep1 += 1
+                                                } else {
+                                                    currentStep1 = 0 // Reset the current step to 0
                                                 }
+                                            }) {
+                                                Text("انتهيت")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .multilineTextAlignment(.center)
+                                                    .foregroundColor(.black)
+                                                    .foregroundColor(.clear)
+                                                    .frame(width: 59, height: 20)
+                                                    .background(.white)
+                                                    .cornerRadius(10)
                                             }
-                                        }//.padding()//zstack
-                                        
-                                        HStack(spacing: 50){
-                                            
-                                            
-                                            Text("اليوم الثاني ")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                            
-                                            Text(" اليوم الرابع ")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                            
-                                            Text(" اليوم السادس ")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                        }
-                                        
-                                        Button(action: {
-                                            if currentStep1 < totalSteps1 {
-                                                currentStep1 += 1
-                                            } else {
-                                                currentStep1 = 0 // Reset the current step to 0
-                                            }
-                                        }) {
-                                            
-                                            Text("انتهيت")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .multilineTextAlignment(.center)
-                                                .foregroundColor(.black)
-                                            
-                                            
-                                                .foregroundColor(.clear)
-                                                .frame(width: 59, height: 20)
-                                                .background(.white)
-                                            
-                                                .cornerRadius(10)
-                                        }
-                                    }.padding(.top, 50.0)
-                                }
-                                
-                                Rectangle()
-                                    .foregroundColor(.clear)
-                                    .frame(width: 357, height: 0.5)
-                                    .background(Color(red: 0.26, green: 0.37, blue: 0.16))
-                                
-                                
-                                //  ZStack
-                                //                    .frame(height: 4)
-                                //                    .frame(maxWidth: .infinity)
-                                
-                                
-                                
+                                            .transition(.opacity)
+                                        }  }.padding(.top,20)
+                                } .animation(.default)
+                                    .padding()
                             } //vstack
                             
                             
                             
-                        }//GeometryReader { geometry in
+                      //  }//GeometryReader { geometry in
                         
                         VStack {
                             ScrollView(.horizontal, showsIndicators: false) {
@@ -3076,7 +2990,7 @@ struct ContentView1: View {
                             
                             
                             
-                        }.padding(.top, 465)
+                        }/*.padding(.top, 465)*/
                         
                     }
                 }//zstack
@@ -3104,12 +3018,9 @@ struct ContentView: View {
     @State private var currentStep1 = 0
     
     var body: some View {
-      //  ScrollView {
-            VStack {
-                ContentView1(totalSteps: totalSteps, currentStep: $currentStep, totalSteps1: totalSteps1, currentStep1: $currentStep1)
-                    //.padding()
-            }
-   //     }
+        VStack {
+            ContentView1(totalSteps: totalSteps, currentStep: $currentStep, totalSteps1: totalSteps1, currentStep1: $currentStep1)
+        }
         .background(Color(red: 0.9612024426, green: 0.9364170432, blue: 0.9066403508))
     }
 }
