@@ -46,9 +46,9 @@ struct ContentView1: View {
                                     
                                     
                                 }
-                                .padding(.trailing, 250.0)   //hstack
+                                .padding(.trailing, 250.0)
                                 Rectangle()
-                                                                    .foregroundColor(.clear)
+                                                .foregroundColor(.clear)
                                                                     .frame(width: 357, height: 0.5)
                                                                     .background(Color(red: 0.26, green: 0.37, blue: 0.16))
                                ZStack {
@@ -83,36 +83,36 @@ struct ContentView1: View {
                                         HStack(spacing: 20){
                                             Text("الاحد")
                                                 .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             
                                             
                                             
                                             Text("الاثنين")
                                                 .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             
                                             
                                             Text("الثلاثاء")
                                                 .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             
                                             
                                             
                                             Text("الاربعاء")
                                                 .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             
                                             Text("الخميس")
                                                 .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             
                                             Text("الجمعة")
                                                 .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             
                                             Text("السبت")
                                                 .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                         }
                                         HStack(spacing: 0) {
                                             ForEach(0..<7) { stepIndex in
@@ -2972,10 +2972,7 @@ struct ContentView1: View {
 
                                                                 
                                                             }.padding(.top,120)
-                                                            //.position(CGPoint(x: 135.0, y: 115))
-                                                            //  )
                                                             
-                                                            //  }
                                                         }
                                                         
                                                         
@@ -3007,12 +3004,6 @@ struct ContentView1: View {
 }
 }
 
-//HStack{
-//                            Image("sun")
-//                                .resizable()
-//                                .frame(width: 400, height: 200)
-//
-//                        }
 
 struct ContentView: View {
     let totalSteps = 7
@@ -3034,23 +3025,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }}
 
-//
-//VStack{
-//    Text("مرحباً !")
-//      .font(
-//        Font.custom("Almarai", size: 24)
-//          .weight(.bold)
-//      )
-//      .multilineTextAlignment(.trailing)
-//      .foregroundColor(Color(red: 0.26, green: 0.37, blue: 0.16))
-//      .frame(width: 96, alignment: .topTrailing)
-//
-//
-//    Rectangle()
-//      .foregroundColor(.clear)
-//      .frame(width: 357, height: 0.5)
-//      .background(Color(red: 0.26, green: 0.37, blue: 0.16))
-//}//.padding(.bottom,700)
 
 
 extension Color {
