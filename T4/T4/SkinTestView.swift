@@ -10,124 +10,120 @@ import SwiftUI
 
 struct SkinTestView: View {
     var body: some View {
-
-        ScrollView(showsIndicators: false) {
+        NavigationView {
+            
+            ScrollView(showsIndicators: false) {
                 
-                VStack(spacing:30) {
-                 
+                VStack(spacing:40) {
+                    
                     VStack {
                         Text("قم بغسل بشرتك بمنظف مناسب وانتظر ما بين ١٥ - ٣٠ دقيقة ، ثم اخترالشكل الأقرب لملمس بشرتك")
-                                .font(.custom("Tajwal", size: 19))
-                                .foregroundColor(Color.font)
+                            .font(.body)
+                            .foregroundColor(Color.font)
                             .multilineTextAlignment(.center)
                     }
                     .padding(.top,90)
-                         
-                        
-                        
+                    
+                    
+                    
                     HStack(spacing:80){
+                        
+                        Circle()
+                            .fill(Color.c1)
+                            .frame(width: 30, height: 30)
+                        
+                        Circle()
+                            .fill(Color.c2)
+                            .frame(width: 30, height: 30)
+                        
+                        Circle()
+                            .fill(Color.c3)
+                            .frame(width: 30, height: 30)
+                        
+                    }
+                    HStack(spacing:75){
+                        Text("زيت")
+                            .font(.subheadline)
+                            .foregroundColor(Color.font)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("طبيعي")
+                            .font(.subheadline)
+                            .foregroundColor(Color.font)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("جفاف")
+                            .font(.subheadline)
+                            .foregroundColor(Color.font)
+                            .multilineTextAlignment(.center)
+                    }
+                    
+                    
+                    
+                    NavigationLink(destination: skintype()) {
+                        VStack {
+                            Image("gaf")
+                                .resizable()
+                                .foregroundColor(Color(red: 0.93, green: 0.905, blue: 0.884))
+                                .frame(width: 200.0, height: 200.0)
+                            Text("بشرة جافة")
+                                .font(.headline)
+                                .foregroundColor(Color.font)
+                                .multilineTextAlignment(.center)
+                        }
+                    }
+                    
+                    NavigationLink(destination: Skin3()) {
+                        VStack {
+                            Image("adia")
+                                .resizable()
+                                .foregroundColor(Color(red: 0.93, green: 0.905, blue: 0.884))
+                                .frame(width: 200.0, height: 200.0)
                             
-                            Circle()
-                                .fill(Color.c1)
-                                .frame(width: 30, height: 30)
-                          
-                            Circle()
-                                .fill(Color.c2)
-                                .frame(width: 30, height: 30)
-                         
-                            Circle()
-                                .fill(Color.c3)
-                                .frame(width: 30, height: 30)
-                          
-                                            }
-                        HStack(spacing:70){
-                            Text("زيت")
-                                .font(.custom("Tajwal", size: 21))
-                                .foregroundColor(Color.font)
-                                .multilineTextAlignment(.center)
-                         
-                            Text("طبيعي")
-                                .font(.custom("Tajwal", size: 21))
-                                .foregroundColor(Color.font)
-                                .multilineTextAlignment(.center)
-                          
-                            Text("جفاف")
-                                .font(.custom("Tajwal", size: 21))
+                            Text("بشرة طبيعية")
+                                .font(.headline)
                                 .foregroundColor(Color.font)
                                 .multilineTextAlignment(.center)
                         }
-   
                         
-                        Button(action: {
-                         
-                        }) {
-                            VStack {
-                                Image("gaf")
-                                    .resizable()
-                                    .foregroundColor(Color(red: 0.93, green: 0.905, blue: 0.884))
-                                    .frame(width: 200.0, height: 200.0)
-                                Text("بشرة جافة")
-                                    .font(.custom("Tajwal", size: 21))
-                                    .foregroundColor(Color.font)
-                                    .multilineTextAlignment(.center)
-                            }
-                        }
-                        
-                        Button(action: {
-                        }) {
-                            VStack {
-                                Image("adia")
-                                    .resizable()
-                                    .foregroundColor(Color(red: 0.93, green: 0.905, blue: 0.884))
-                                    .frame(width: 200.0, height: 200.0)
-                                
-                            Text("بشرة عادية")
-                                .font(.custom("Tajwal", size: 21))
-                                .foregroundColor(Color.font)
-                                .multilineTextAlignment(.center)
-                            }
-                            
-                        }
-                        
-                    Button(action: {
-                    }) {
+                    }
+                    NavigationLink(destination: Skin4()) {
                         VStack {
                             Image("mokt")
                                 .resizable()
                                 .foregroundColor(Color(red: 0.93, green: 0.905, blue: 0.884))
                                 .frame(width: 200.0, height: 200.0)
-                        
-                        Text("بشرة مختلطة")
-                            .font(.custom("Tajwal", size: 21))
-                            .foregroundColor(Color.font)
-                            .multilineTextAlignment(.center)
+                            
+                            Text("بشرة مختلطة")
+                                .font(.headline)
+                                .foregroundColor(Color.font)
+                                .multilineTextAlignment(.center)
                         }
                         
                     }
-                        
-                        Button(action: {
-                        }) {
-                            VStack {
-                                Image("dohn")
-                                    .resizable()
-                                    .foregroundColor(Color(red: 0.93, green: 0.905, blue: 0.884))
-                                    .frame(width: 200.0, height: 200.0)
-        
-                                Text("بشرة دهنية")
-                                    .font(.custom("Tajwal", size: 21))
-                                    .foregroundColor(Color.font)
-                                    .multilineTextAlignment(.center)
-                            }
+                    NavigationLink(destination: Skin2()) {
+                        VStack {
+                            Image("dohn")
+                                .resizable()
+                                .foregroundColor(Color(red: 0.93, green: 0.905, blue: 0.884))
+                                .frame(width: 200.0, height: 200.0)
                             
+                            Text("بشرة دهنية")
+                                .font(.headline)
+                                .foregroundColor(Color.font)
+                                .multilineTextAlignment(.center)
+                        }
+                        
                     }
                 }
             }
-
+            
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.back) // Set custom color
             .edgesIgnoringSafeArea(.all)
             
         }
+    }
     }
 #Preview {
     SkinTestView()

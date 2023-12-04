@@ -30,6 +30,7 @@ struct Skin4: View {
                     
                     
                     Text("بعض مناطق وجهك جافة أو عادية بينما مناطق أخرى دهنية. مع المنتجات المناسبة ستصبح بشرتك أكثر توازناً وستبدو أكثر نعومة ونقاءً.\n\n\nهل هو نوع بشرتك؟")
+                        .offset(x: 0, y:70)
 
                         .font(Font.custom("Tajawal", size: 15))
                         .foregroundColor(Color(red: 0.26, green: 0.37, blue: 0.16))
@@ -45,7 +46,7 @@ struct Skin4: View {
                     ){
                                    Text("العثور على العناية بالبشرة المناسبة")
                         .font(
-                            Font.custom("Tajawal", size: 12)
+                            Font.custom("Tajawal", size: 16)
                                 .weight(.bold)
                         )
                                    
@@ -62,20 +63,14 @@ struct Skin4: View {
                             .background(.white)
                                    
                             .cornerRadius(10)
-                     }
+                     }.offset(x: 0, y:90)
                     
-                    NavigationLink(
-                        destination: ContentView()
-                    ){
-                        Text("تخطي")
-                            .font(Font.custom("Inter", size: 12))
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color(red: 0.21, green: 0.21, blue: 0.21))
-                            .frame(width: 100, height: 25, alignment: .center)
-                    }
+                   
                 
-            }.padding(.top,40 )
             }
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.back) // Set custom color
+                    .edgesIgnoringSafeArea(.all)
             
             
             

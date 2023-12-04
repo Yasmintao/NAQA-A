@@ -24,14 +24,11 @@ struct skintype: View {
                                 .aspectRatio(contentMode: .fill)
                             
                         )
-                        .cornerRadius(159)
-                    // .padding(14)
-                    
-                    
                     
                     
                     
                     Text("بشرتك جافة وتفتقر إلى الرطوبة. ستعمل منتجات العناية بالبشرة المناسبة على تغذية بشرتك وإصلاح حاجزها الحرج ومنع فقدان الرطوبة.\n\n\nهل هو نوع بشرتك؟")
+                        .offset(x: 0, y:70)
                     
                         .font(Font.custom("Tajawal", size: 15))
                         .foregroundColor(Color(red: 0.26, green: 0.37, blue: 0.16))
@@ -39,15 +36,13 @@ struct skintype: View {
                         .padding(.trailing)
                         .frame(width: 296, height: 107, alignment: .trailing)
                     
-                    // .padding()
-                    
-                    
                     NavigationLink(
                         destination: ContentView()
                     ){
                                    Text("العثور على العناية بالبشرة المناسبة")
+                        
                         .font(
-                            Font.custom("Tajawal", size: 12)
+                            Font.custom("Tajawal", size: 16)
                                 .weight(.bold)
                         )
                                    
@@ -64,26 +59,17 @@ struct skintype: View {
                             .background(.white)
                                    
                             .cornerRadius(10)
-                     }
+                        
+                    }.offset(x: 0, y:90)
                 
-                    NavigationLink(
-                        destination: ContentView()
-                    ){
-                        Text("تخطي")
-                            .font(Font.custom("Inter", size: 12))
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color(red: 0.21, green: 0.21, blue: 0.21))
-                            .frame(width: 100, height: 25, alignment: .center)
-                    }
-                 }.padding(.top,40 )
-            }
-            
-            
-            
-            
+                   
+                 }
+            }  .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.back) // Set custom color
+                .edgesIgnoringSafeArea(.all)
             
         }
-        .background(Color(red: 1, green: 0.97, blue: 0.95)) }
+ }
 }
     
 
