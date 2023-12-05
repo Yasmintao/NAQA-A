@@ -35,18 +35,24 @@ struct ContentView1: View {
                             VStack{
                                 
                                 HStack{
-                                    
-                                    Text("مرحباً !")
-                                        .font(
-                                            Font.custom("Almarai", size: 30)
-                                                .weight(.bold)
-                                        )
-                                        .foregroundColor(Color(red: 0.26, green: 0.37, blue: 0.16))
-                                    
+                                    if showSun{ Text("مساء الخير")
+                                            .font(
+                                                Font.custom("Almarai", size: 30)
+                                                    .weight(.bold)
+                                            )
+                                            .foregroundColor(Color(red: 0.26, green: 0.37, blue: 0.16))
+                                        } else{ Text("صباح الخير")
+                                            .font(
+                                                Font.custom("Almarai", size: 30)
+                                                    .weight(.bold)
+                                            )
+                                            .foregroundColor(Color(red: 0.26, green: 0.37, blue: 0.16))
+                                        }
+                                   
                                     
                                     
                                 }
-                                .padding(.trailing, 250.0)
+                                .padding(.trailing, 220.0)
                                 Rectangle()
                                                 .foregroundColor(.clear)
                                                                     .frame(width: 357, height: 0.5)
@@ -57,6 +63,7 @@ struct ContentView1: View {
                                         .fill(rectangleColor)
                                         .frame(width: 350, height: 180)
                                         .cornerRadius(10)
+                                 
                                     HStack{
                                         if showSun {
                                             Image("sun")
@@ -79,7 +86,12 @@ struct ContentView1: View {
                                     .padding(.leading, 280)
                                     .padding(.bottom, 110)
                                     
-                                   VStack (spacing: 20){
+                                   VStack (spacing: 15){
+//                                       HStack{
+//                                           Text("الروتين الصباحي")
+//                                               .font(Font.custom("Tajawal", size: 18))
+//                                       }.padding(.trailing, 200)
+//                                           .padding(.bottom,20)
                                         HStack(spacing: 20){
                                             if showSun {
                                                 Text("الاحد")
@@ -412,7 +424,7 @@ struct ContentView1: View {
                                                                         Text("اسم المنتج")
                                                                             .font(Font.custom("Tajawal", size: 18))
                                                                             .fontWeight(.heavy)
-                                                                            .foregroundColor(.white))
+                                                                            .foregroundColor(.white)).padding(.bottom,10)
                                                                 
                                                             }.padding(.top,120)
                                                             //.position(CGPoint(x: 135.0, y: 115))
