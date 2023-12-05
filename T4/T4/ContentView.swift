@@ -12,7 +12,7 @@ struct ContentView1: View {
     @Binding var currentStep: Int
     let totalSteps1: Int
     @Binding var currentStep1: Int
-    @State private var isButton1Clicked = false
+    @State private var isButton1Clicked = true
     @State private var isButton2Clicked = false
     @State private var isButton3Clicked = false
     @State private var isButton4Clicked = false
@@ -81,39 +81,77 @@ struct ContentView1: View {
                                     
                                    VStack (spacing: 20){
                                         HStack(spacing: 20){
-                                            Text("الاحد")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                            
-                                            Text("الاثنين")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                            Text("الثلاثاء")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                            
-                                            Text("الاربعاء")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            Text("الخميس")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            Text("الجمعة")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                            
-                                            Text("السبت")
-                                                .font(Font.custom("Tajawal", size: 12))
-                                                .foregroundColor(.white)
-                                        }
+                                            if showSun {
+                                                Text("الاحد")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.white)
+                                                
+                                                
+                                                
+                                                Text("الاثنين")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.white)
+                                                
+                                                
+                                                Text("الثلاثاء")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.white)
+                                                
+                                                
+                                                
+                                                Text("الاربعاء")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.white)
+                                                
+                                                Text("الخميس")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.white)
+                                                
+                                                Text("الجمعة")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.white)
+                                                
+                                                Text("السبت")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.white)
+                                            }  else {
+                                                
+                                                
+                                                Text("الاحد")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.black)
+                                                
+                                                
+                                                
+                                                Text("الاثنين")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.black)
+                                                
+                                                
+                                                Text("الثلاثاء")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.black)
+                                                
+                                                
+                                                
+                                                Text("الاربعاء")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.black)
+                                                
+                                                Text("الخميس")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.black)
+                                                
+                                                Text("الجمعة")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.black)
+                                                
+                                                Text("السبت")
+                                                    .font(Font.custom("Tajawal", size: 12))
+                                                    .foregroundColor(.black)
+                                                
+                                                
+                                            }  }
                                         HStack(spacing: 0) {
                                             ForEach(0..<7) { stepIndex in
                                                 if showSun {
