@@ -14,7 +14,21 @@ struct SkinTestView: View {
             
             ScrollView(showsIndicators: false) {
                 
-                VStack(spacing:40) {
+                VStack(spacing:30) {
+                    
+                    VStack {
+//                        Spacer()
+                        NavigationLink(destination: ContentView()) {
+                            Text("تخطي")
+                               
+                                .font(Font.custom("Cairo", size: 16).weight(.semibold))
+                                .font(.headline)
+                                .fontWeight(.medium)
+                                .foregroundColor(.font)
+                                .cornerRadius(8)
+
+                        }
+                    }.offset(x: 150, y: 85 )
                     
                     VStack {
                         Text("قم بغسل بشرتك بمنظف مناسب وانتظر ما بين ١٥ - ٣٠ دقيقة ، ثم اخترالشكل الأقرب لملمس بشرتك")
@@ -122,7 +136,7 @@ struct SkinTestView: View {
             .background(Color.back) // Set custom color
             .edgesIgnoringSafeArea(.all)
             
-        }
+        }.navigationBarBackButtonHidden(true)
     }
     }
 #Preview {

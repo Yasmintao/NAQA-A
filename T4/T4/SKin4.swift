@@ -76,7 +76,8 @@ struct Skin4: View {
             
             
             
-        }
+                }.navigationBarBackButtonHidden(true)
+
         .background(Color(red: 1, green: 0.97, blue: 0.95)) }
 }
     

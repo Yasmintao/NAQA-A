@@ -68,7 +68,7 @@ struct skintype: View {
             .background(Color.back) // Set custom color
                 .edgesIgnoringSafeArea(.all)
             
-        }
+        }.navigationBarBackButtonHidden(true)
  }
 }
     

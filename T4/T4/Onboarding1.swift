@@ -98,7 +98,7 @@ struct Onboarding1: View {
                 
                 VStack {
                     Spacer()
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: SkinTestView()) {
                         Text("تخطي")
                            
                             .font(Font.custom("Cairo", size: 16).weight(.semibold))
@@ -110,7 +110,7 @@ struct Onboarding1: View {
                     }
                 } .offset(x:140 , y:-700)
             }            .background(Color.back) 
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 
